@@ -11,12 +11,12 @@
 
   //   function : login => success, fail
   type SuccessState = {
-    reason: string;
-  };
-  type FailState = {
     response: {
       body: string;
     };
+  };
+  type FailState = {
+    reason: string;
   };
   type LoginState = SuccessState | FailState;
 
